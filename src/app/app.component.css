@@ -1,0 +1,112 @@
+@page {
+  size: A4 portrait;
+  overflow: hidden;
+  margin: 0;
+}
+
+#page {
+  height: 29.69cm;
+  width: 21cm;
+  background-color: white;
+}
+
+.pg_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  color: black;
+}
+
+.cont_header {
+  flex-direction: column;
+  align-self: center;
+  padding: 2rem 1rem 1.5rem 1rem;
+  width: 100%;
+}
+
+.cont_header > h1 {
+  text-align: center;
+  white-space: nowrap;
+  font: 2rem, bold;
+}
+
+.cont_header > h3 {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cont_items {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 0;
+  flex: 1;
+}
+
+.itm_left {
+  flex-direction: column;
+  background-color: #d3d3d3;
+  border-radius: 0 1.5rem 0 0;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.itm_left > ul {
+  font-size: 12px;
+  margin: 0.5rem 0 1rem -2rem;
+}
+
+.itm_left > p {
+  text-align: justify;
+  font-size: 10px;
+  line-height: 1.25;
+  margin: 0.5rem 0 1rem 0.5rem;
+}
+
+.itm_right {
+  flex-direction: column;
+  padding: 2rem 1.5rem 2rem 2rem;
+}
+
+.itm_right > ul {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0.5rem 0 1rem -2rem;
+}
+
+.right_projects {
+  text-align: justify;
+  font-size: 9.67px;
+  line-height: 1.25;
+  margin: 0.5rem 1rem 1rem -1.5rem;
+}
+
+@media only screen and (max-width: 21.5cm) {
+  #page {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cont_header > h1 {
+    font-size: 1.7rem;
+  }
+  .cont_header > h3 {
+    font-size: 1rem;
+  }
+
+  .cont_items {
+    grid-template-columns: 100%;
+  }
+
+  .itm_left {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .cont_header > h1 {
+    font-size: 1.04rem;
+  }
+  .cont_header > h3 {
+    font-size: 0.7rem;
+  }
+}

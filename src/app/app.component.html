@@ -1,0 +1,214 @@
+<div id="page">
+  <div class="pg_container">
+    <header class="cont_header">
+      <h1>{{ name }}</h1>
+      <h3>{{ goal }}</h3>
+    </header>
+
+    <div class="cont_items">
+      <section class="itm_left">
+        <h3>Contato</h3>
+        <ul>
+          <li>
+            Email:
+            <a
+              href="mailto:wesleymuniz20@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ email }}</a
+            >
+          </li>
+          <li>
+            Telefone:
+            <a
+              href="http://wa.me/5511948135991"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ phone }} (WhatsApp)</a
+            >
+          </li>
+          <li>
+            Endereço:
+            <a
+              href="https://goo.gl/maps/tjgAaAK2XJmBLtmQ7"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ local }}</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/wesleybritovlk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ linkedin }}</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a
+              href="https://github.com/wesleyvlk"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ github }}</a
+            >
+          </li>
+        </ul>
+        <h3>Perfil</h3>
+        <p>{{ aboutMe }}</p>
+        <h3>Tecnologias</h3>
+        <ul>
+          <li>{{ skills }}</li>
+        </ul>
+        <h3>Idiomas</h3>
+        <ul>
+          <li>{{ languages }}</li>
+        </ul>
+      </section>
+
+      <section class="itm_right">
+        <h3>Objetivo</h3>
+        <ul>
+          <li>
+            {{ objective }} <b>{{ objGoal }}</b>
+          </li>
+        </ul>
+        <h3>Formação</h3>
+        <ul>
+          <li *ngFor="let edu of education">
+            <h4>{{ edu.institution }}</h4>
+            <p>{{ edu.course }}</p>
+          </li>
+        </ul>
+
+        <h3>Projetos</h3>
+        <ul>
+          <li *ngFor="let proj of projects">
+            <h4>{{ proj.name1 }}</h4>
+            <p>
+              Repositório:
+              <a
+                href="https://github.com/wesleyvlk/stdyProject-joKenPOO-java"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ proj.repository1 }}</a
+              >
+            </p>
+            <ul class="right_projects">
+              <p>{{ proj.description1 }}</p>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let proj of projects">
+            <h4>{{ proj.name2 }}</h4>
+            <p>
+              Repositório:
+              <a
+                href="https://github.com/wesleyvlk/stdyProject-contaTerminal-java"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ proj.repository2 }}</a
+              >
+            </p>
+            <ul class="right_projects">
+              <p>{{ proj.description2 }}</p>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let proj of projects">
+            <h4>{{ proj.name3 }}</h4>
+            <p>
+              Repositório:
+              <a
+                href="https://github.com/wesleyvlk/learn-java-basic"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ proj.repository3 }}</a
+              >
+            </p>
+            <ul class="right_projects">
+              <p>{{ proj.description3 }}</p>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let proj of projects">
+            <h4>{{ proj.name4 }}</h4>
+            <p>
+              Repositório:
+              <a
+                href="https://github.com/wesleyvlk/learn-spring-basic"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ proj.repository4 }}</a
+              >
+            </p>
+            <ul class="right_projects">
+              <p>{{ proj.description4 }}</p>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let proj of projects">
+            <h4>{{ proj.name5 }}</h4>
+            <p>
+              Repositório:
+              <a
+                href="https://github.com/wesleyvlk/project-mycv-angular"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ proj.repository5 }}</a
+              >
+            </p>
+            <ul class="right_projects">
+              <p>{{ proj.description5 }}</p>
+            </ul>
+          </li>
+        </ul>
+        <h3>Cursos e Certificações</h3>
+        <ul>
+          <li *ngFor="let crs of courses">
+            <p>
+              <a
+                href="https://www.dio.me/bootcamp/santander-fullstack-developer"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ crs.course1 }}</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://drive.google.com/file/d/122F0aPOHOC8EwVXR6lHMOt4LuVCgIUNF/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ crs.course2 }}</a
+              >
+            </p>
+            <p>{{ crs.course3 }}</p>
+            <p>
+              <a
+                href="https://www.dio.me/bootcamp/spring-framework-experience"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ crs.course4 }}</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://drive.google.com/file/d/1BTa-Kk-19q68dhW19cKur7XvAjN6uXjt/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ crs.course5 }}</a
+              >
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
